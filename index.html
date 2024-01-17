@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Display</title>
+  <style>
+    img {
+      max-width: 100%;
+      height: auto;
+      display: none; /* Initially hide the image */
+    }
+    .bg{
+        border: 5px solid black;
+        width: 190px;
+        height: 170px;
+    }
+    .bg1{
+        border: 5px solid black;
+        width: 500px;
+        height: 400px;
+        margin: 90px;
+        margin-top: 20px;
+        margin-left: 230px;
+    }
+  </style>
+</head>
+<body>
+<div class="bg">
+<button onclick="toggleImage('image1')">Show Image 1</button>
+<br><br>
+<button onclick="toggleImage('image2')">Show Image 2</button>
+</div>
+<div class="bg1">
+<img id="image1" src="download1.png" alt="Image 1">
+<img id="image2" src="download2.png" alt="Image 2">
+</div>
+<script>
+  function toggleImage(imageId) {
+    // Toggle the display of the clicked image
+    var imageElement = document.getElementById(imageId);
+    if (imageElement.style.display === 'block') {
+      imageElement.style.display = 'none';
+    } else {
+      // Hide all images
+      document.getElementById('image1').style.display = 'none';
+      
+      
+      // Display the clicked image
+     if (imageElement.style.display = 'block'){
+
+      
+    }
+}
+
+
+
+  }
+</script>
+
+</body>
+</html>
